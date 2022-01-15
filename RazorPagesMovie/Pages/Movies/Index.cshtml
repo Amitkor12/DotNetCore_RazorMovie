@@ -1,0 +1,66 @@
+@page
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@*<h1>Index</h1>*@
+
+<br/>
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Movie List</h2>
+    </div>
+    <div class="col-2">
+        <a asp-page="Create" class="btn btn-info form-control text-white">Create New Movie</a>
+    </div>
+
+
+@*<p>
+    <a asp-page="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(m => m.Movie[0].Title)
+                @*<label asp-for="Movie.FirstOrDefault().Title"></label>*@
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Movie[0].ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Movie[0].Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Movie[0].Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Movie) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID" class="btn btn-success btn-sm text-white">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID" class="btn btn-info btn-sm text-white">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID" class="btn btn-danger btn-sm text-white">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
