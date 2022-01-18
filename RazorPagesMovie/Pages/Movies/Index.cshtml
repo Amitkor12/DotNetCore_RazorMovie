@@ -20,6 +20,16 @@
 @*<p>
     <a asp-page="Create">Create New</a>
 </p>*@
+
+<form>
+    <div>
+        <select asp-for="MovieGerne" asp-items="Model.Gernes">
+            <option value="">All</option>
+        </select>
+        Title:<input type="text" asp-for="SearchString"/>
+        <input type="submit" value="Search"/>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -35,6 +45,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(m => m.Movie[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.Movie[0].Rating)
             </th>
             <th></th>
         </tr>
@@ -54,6 +67,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </th>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID" class="btn btn-success btn-sm text-white">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.ID" class="btn btn-info btn-sm text-white">Details</a> |

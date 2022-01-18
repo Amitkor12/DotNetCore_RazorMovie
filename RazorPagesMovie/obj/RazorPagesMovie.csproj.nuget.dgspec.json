@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/amitkor12/Documents/RazorMovies/RazorPagesMovie/RazorPagesMovie.csproj": {}
+    "/home/amitkor12/Documents/GitFolder/RazorMovies/RazorPagesMovie/RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "/home/amitkor12/Documents/RazorMovies/RazorPagesMovie/RazorPagesMovie.csproj": {
+    "/home/amitkor12/Documents/GitFolder/RazorMovies/RazorPagesMovie/RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/amitkor12/Documents/RazorMovies/RazorPagesMovie/RazorPagesMovie.csproj",
+        "projectUniqueName": "/home/amitkor12/Documents/GitFolder/RazorMovies/RazorPagesMovie/RazorPagesMovie.csproj",
         "projectName": "RazorPagesMovie",
-        "projectPath": "/home/amitkor12/Documents/RazorMovies/RazorPagesMovie/RazorPagesMovie.csproj",
+        "projectPath": "/home/amitkor12/Documents/GitFolder/RazorMovies/RazorPagesMovie/RazorPagesMovie.csproj",
         "packagesPath": "/home/amitkor12/.nuget/packages/",
-        "outputPath": "/home/amitkor12/Documents/RazorMovies/RazorPagesMovie/obj/",
+        "outputPath": "/home/amitkor12/Documents/GitFolder/RazorMovies/RazorPagesMovie/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/amitkor12/.nuget/NuGet/NuGet.Config"
